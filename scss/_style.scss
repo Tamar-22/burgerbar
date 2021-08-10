@@ -1,0 +1,45 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+    padding: 20px;
+    @media (max-width:768px) {
+        flex-direction: column;;
+    }
+    .navbar-navigation {
+        @media (max-width:768px) {
+            display: none;
+        }
+        .navbar-ul{
+            display: flex;
+            @media (max-width:768px) {
+                flex-direction: column;;
+            }
+            li{
+                margin: 10px;
+                @media (max-width:768px) {
+                   text-align: center; 
+                }
+            }
+            a{
+               color: wheat; 
+               font-size: 20px;
+            }
+    }
+    }
+
+.toggle-button{
+    font-size: 23px;
+    color: wheat; 
+    position: absolute;  
+    top: 20px;
+    right: 20px;
+    display: none;
+    @media (max-width:768px) {
+        display: block;
+    }
+}
+.navbar-navigation.active{
+    display: block;
+}
+}
